@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</head>
+<body>
+
+<h1>Change the text inside the input field below</h1>
+<form name='demo_form'>
+First name: <input type="text" name="fname" id="name"><br><br>
+Last name: <input type="text" name="lname" id="name"><br><br>
+<input type="submit" value="Submit">
+</form>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$( "#name").change(function() {
+  	$( "<p>The text has changed.</p>" ).appendTo( "body" );
+	});
+});
+</script>
+</body>
+</html>
